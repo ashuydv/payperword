@@ -291,6 +291,78 @@ h6 {
     visibility: visible;
 }
 
+.drop-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    list-style: none;
+    position: static;
+    margin: 0;
+    padding: 0;
+}
+
+.drop-link {
+    position: relative;
+}
+
+.dd {
+    position: absolute;
+    max-width: 1260px;
+    width: 100%;
+    padding: 2rem;
+    z-index: 1000;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    left: 9%;
+    top: 28%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    box-shadow: 0px 3px 55px rgba(0, 0, 0, .15);
+}
+
+.drop:hover .dd {
+    opacity: 1;
+    visibility: visible;
+    top: 20%;
+}
+
+.blue-bar {
+    background: #01ACEA;
+    padding: 30px 0 20px 0;
+}
+
+.blue-bar a {
+    color: white;
+}
+
+.dd .triangle1 {
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #fff;
+    position: absolute;
+    top: -12%;
+    left: 3%;
+    box-shadow: 0px 3px 55px rgba(0, 0, 0, .15);
+}
+
+.dd .triangle2 {
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #fff;
+    position: absolute;
+    top: -12%;
+    left: 13%;
+    box-shadow: 0px 3px 55px rgba(0, 0, 0, .15);
+}
+
 .navbar .dropdown .dropdown ul {
     top: 0;
     left: calc(100% - 30px);
