@@ -306,15 +306,16 @@
     
     .dd {
         position: absolute;
-        max-width: 1100px;
+        max-width: 1260px;
         width: 100%;
+        margin: auto;
         padding: 2rem;
         z-index: 1000;
         background: white;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        left: 84px;
+        left: 9%;
         top: 18%;
         opacity: 0;
         visibility: hidden;
@@ -339,6 +340,16 @@
         color: white;
     }
     
+    .dd li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .dd li p {
+        margin: .5rem;
+    }
+    
     .dd .triangle1 {
         width: 0px;
         height: 0px;
@@ -346,7 +357,7 @@
         border-right: 8px solid transparent;
         border-bottom: 16px solid #fff;
         position: absolute;
-        top: -12%;
+        top: -5%;
         left: 3%;
         box-shadow: 0px 3px 55px rgba(0, 0, 0, .15);
     }
@@ -358,7 +369,7 @@
         border-right: 8px solid transparent;
         border-bottom: 16px solid #fff;
         position: absolute;
-        top: -12%;
+        top: -5%;
         left: 13%;
         box-shadow: 0px 3px 55px rgba(0, 0, 0, .15);
     }
@@ -401,9 +412,13 @@
         margin: 2rem 42%;
     }
     
+    .navbar .btn-get-started::before {
+        display: none;
+    }
+    
     .navbar .btn-get-started:hover {
-        border: 1px solid #73469B;
-        color: #73469B;
+        border: 1px solid #73469B !important;
+        color: #fff;
     }
     
     #topbar {
@@ -890,12 +905,20 @@
         text-align: center;
     }
     
-    .works .section-header {
+    .works .section-header,
+    .projects .section-header {
         text-align: center;
     }
     
-    .works .section-header h2 {
+    .works .section-header h2,
+    .projects .section-header h2,
+    .business .section-header h2 {
         color: #01ACEA;
+        font-size: 2rem;
+    }
+    
+    .business .section-header h2 {
+        color: white;
         font-size: 2rem;
     }
     
@@ -941,6 +964,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        padding: 100px 0;
     }
     
     .business .section-header {
@@ -950,15 +974,105 @@
     
     .business .col-md-3 {
         text-align: center;
-        max-width: 275px;
+        max-width: 300px;
+        width: 100%;
         height: 350px;
+        padding: 0rem;
         box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
-        padding: 2rem 1rem;
         border-radius: .5rem;
         background: #fff;
-        margin: .25rem auto;
+        margin: 1rem auto;
         position: relative;
         overflow: hidden;
+        transition: all 500ms ease-in-out;
+    }
+    
+    .wt-categorycontent {
+        float: left;
+        width: 100%;
+        min-height: 350px;
+        padding: 2rem auto;
+        margin: auto;
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 500ms ease-in-out;
+    }
+    
+    .wt-categorycontent figure {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65px;
+        margin: 0 auto;
+        position: absolute;
+        transition: .5s;
+    }
+    
+    .wt-categorycontent:hover figure {
+        top: -125px;
+    }
+    
+    .wt-categoryslidup {
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        bottom: -100px;
+        display: block;
+        font-size: 16px;
+        padding: 0 20px;
+        font-weight: 400;
+        line-height: 16px;
+        visibility: hidden;
+        border-radius: 50%;
+        position: absolute;
+        text-align: center;
+        transition: .5s;
+    }
+    
+    .wt-cattitle {
+        left: 0;
+        top: 225px;
+        float: left;
+        width: 100%;
+        padding: 0 20px;
+        position: absolute;
+        transition: .5s;
+    }
+    
+    .wt-cattitle a {
+        color: black;
+    }
+    
+    .wt-categorycontent:hover {
+        background: #01ACEA;
+        color: #fff;
+    }
+    
+    .wt-categorycontent:hover .wt-cattitle {
+        top: 30%;
+        color: #fff;
+    }
+    
+    .wt-categorycontent:hover .wt-cattitle h4 a {
+        color: #fff;
+    }
+    
+    .wt-categorycontent:hover .wt-categoryslidup {
+        opacity: 1;
+        bottom: 0;
+        bottom: 30%;
+        visibility: visible;
+        color: #fff;
+    }
+    
+    .wt-categorycontent:hover .wt-categoryslidup a {
+        color: #fff;
     }
     
     .business .col-md-3 .two {
@@ -1003,7 +1117,9 @@
     }
     
     .business .btn-get-started {
-        transform: translateX(200%);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
     }
     
     .hiring .row {
@@ -1265,8 +1381,26 @@
         width: auto;
     }
     
+    #footer ul {
+        margin-top: 1rem;
+    }
+    
     #footer ul li {
-        padding: .3rem 0;
+        padding: 0rem 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    #footer ul li p {
+        margin: .5rem 0;
+        margin-top: 0;
+    }
+    
+    .footer .col-md-4 p {
+        margin: 1rem !important;
+        margin-bottom: 0rem !important;
     }
     
     #footer .footer-top {
@@ -1293,11 +1427,11 @@
     }
     
     #footer .footer-top h4 {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
         color: #fff;
         position: relative;
-        padding-bottom: 12px;
+        padding-bottom: 1.2rem;
     }
     
     #footer .footer-top .footer-links {
@@ -1366,6 +1500,28 @@
         background: #3b8af2;
         color: #fff;
         text-decoration: none;
+    }
+    
+    .medias ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+    }
+    
+    .medias i {
+        width: 40px;
+        height: 40px;
+        border: 2px solid white;
+        border-radius: 50%;
+        position: relative;
+    }
+    
+    .medias i::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     
     @media (max-width: 768px) {
