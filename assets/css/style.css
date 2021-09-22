@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #444444;
 }
 
@@ -19,7 +20,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 
@@ -70,11 +72,6 @@ h6 {
     }
 }
 
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-
 .back-to-top {
     position: fixed;
     visibility: hidden;
@@ -105,22 +102,6 @@ h6 {
     opacity: 1;
 }
 
-
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-
-@media screen and (max-width: 768px) {
-    [data-aos-delay] {
-        transition-delay: 0 !important;
-    }
-}
-
-
-/*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-
 #topbar {
     background: #73469B;
     height: 200px;
@@ -129,11 +110,6 @@ h6 {
     color: #fff;
     padding: 0;
 }
-
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 
 #header {
     background: #fff;
@@ -725,10 +701,11 @@ ul {
 #hero h1 {
     margin: 0;
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 56px;
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 3rem;
 }
 
 #hero h1 span {
@@ -744,7 +721,7 @@ ul {
 
 #hero .btn-get-started,
 .hiring .btn-get-started {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 14px;
@@ -755,6 +732,10 @@ ul {
     transition: 0.5s;
     color: #fff;
     background: #73469B;
+}
+
+#hero .btn-get-started {
+    background: #01ACEA;
 }
 
 .hiring .btn-get-started {
@@ -831,7 +812,8 @@ section {
     background-color: #f6f9fe;
 }
 
-.section-title {
+.section-title,
+.section-header {
     text-align: center;
     padding-bottom: 30px;
 }
@@ -971,16 +953,18 @@ section {
     margin: 0;
 }
 
-.works .col-md-3 .box .purple i {
-    font-size: 3rem;
+.works .col-md-3 .box .purple img {
+    width: 95px;
+    height: 95px;
+    left: 38%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: rotate( -45deg) translate(0%, -50%);
+    top: 35%;
+    padding: 1rem;
 }
 
-.works .col-md-3 .box .purple i::before {
-    transform: rotate(-45deg);
+.works .col-md-3 .box .purple img::after {
+    transform: rotate(-50deg);
 }
 
 .business {
@@ -988,8 +972,10 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 300px auto;
+    padding: 60px auto;
     overflow: hidden;
+    height: 140vh;
+    position: relative;
 }
 
 .business .section-header {
@@ -999,15 +985,19 @@ section {
 
 .business .col-md-3 {
     text-align: center;
-    max-width: 320px;
-    width: 100%;
+    width: 25%;
     height: 350px;
     padding: 0rem;
     border-radius: .5rem;
-    margin: 1rem auto;
+    margin: .25rem auto;
     position: relative;
     overflow: hidden;
     transition: 500ms;
+}
+
+.price {
+    color: #73469B;
+    font-weight: bold;
 }
 
 .wt-categorycontent {
@@ -1015,7 +1005,7 @@ section {
     width: 100%;
     min-height: 350px;
     padding: 2rem auto;
-    margin: .5rem;
+    margin: auto .5rem;
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -1089,7 +1079,11 @@ section {
     color: #fff;
 }
 
-.wt-categorycontent:hover .wt-cattitle h4 a {
+.wt-categorycontent .wt-cattitle h5 {
+    margin: 0rem;
+}
+
+.wt-categorycontent:hover .wt-cattitle h5 a {
     color: #fff;
 }
 
@@ -1149,8 +1143,9 @@ section {
 .business .btn-get-started {
     position: absolute;
     left: 50%;
+    bottom: 5%;
     transform: translate(-50%);
-    margin: auto;
+    margin: 1rem auto;
 }
 
 .hiring .row {
@@ -1432,8 +1427,19 @@ section {
     padding: 0;
 }
 
-.footer .footer-img {
+#footer .footer-img {
     width: auto;
+    margin: 1.25rem 0;
+    margin-top: 0;
+}
+
+#footer .footer-desc {
+    margin: 1.25rem 0;
+    line-height: 105px !important;
+}
+
+#footer .medias {
+    margin: 1.75rem 0;
 }
 
 #footer ul {
@@ -1477,7 +1483,7 @@ section {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
 }
 
@@ -1555,6 +1561,17 @@ section {
     background: #3b8af2;
     color: #fff;
     text-decoration: none;
+}
+
+#footer .section-header {
+    text-align: left;
+    padding-bottom: 0rem;
+}
+
+.footer-copyright {
+    margin: 3rem auto;
+    margin-bottom: 0;
+    font-size: 14px;
 }
 
 .medias ul {
