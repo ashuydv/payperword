@@ -1435,7 +1435,7 @@ section {
 
 #footer .footer-desc {
     margin: 1.25rem 0;
-    line-height: 105px !important;
+    line-height: 25px;
 }
 
 #footer .medias {
@@ -1481,7 +1481,7 @@ section {
 
 #footer .footer-top .footer-contact p {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 2px;
     margin-bottom: 0;
     font-family: "Montserrat", sans-serif;
     color: #fff;
@@ -1569,7 +1569,7 @@ section {
 }
 
 .footer-copyright {
-    margin: 3rem auto;
+    margin: 3.25rem auto;
     margin-bottom: 0;
     font-size: 14px;
 }
