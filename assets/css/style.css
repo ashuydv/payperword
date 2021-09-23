@@ -296,10 +296,10 @@ ul {
 
 .dd {
     position: absolute;
-    max-width: 1290px;
+    max-width: 1270px;
     width: 100%;
     margin: auto;
-    padding: 2rem;
+    padding: 1rem;
     z-index: 1000;
     background: white;
     display: flex;
@@ -334,10 +334,12 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
 }
 
 .dd li p {
     margin: .5rem;
+    font-size: 13.5px;
 }
 
 .dd .triangle1 {
@@ -644,7 +646,7 @@ ul {
 
 .hire {
     background: #F2F7F2;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .hire .col-md-3 h3 {
@@ -936,7 +938,7 @@ section {
     color: #fff;
     border-radius: 1rem;
     transform: rotate(45deg);
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, .25);
     margin: 3rem auto;
 }
 
@@ -945,7 +947,7 @@ section {
     width: 120px;
     height: 120px;
     border-radius: .5rem;
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 0px 5px rgb(0 0 0 / 84%);
     position: relative;
 }
 
@@ -1037,9 +1039,8 @@ section {
     left: 0;
     opacity: 0;
     width: 100%;
-    bottom: -100px;
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 20px;
     font-weight: 400;
     line-height: 16px;
@@ -1052,12 +1053,16 @@ section {
 
 .wt-cattitle {
     left: 0;
-    top: 225px;
+    top: 220px;
     float: left;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 5px;
     position: absolute;
     transition: .5s;
+}
+
+.wt-cattitle h5 {
+    padding-bottom: .5rem;
 }
 
 .wt-cattitle a {
@@ -1090,13 +1095,14 @@ section {
 .wt-categorycontent:hover .wt-categoryslidup {
     opacity: 1;
     bottom: 0;
-    bottom: 30%;
+    bottom: 20%;
     visibility: visible;
     color: #fff;
 }
 
 .wt-categorycontent:hover .wt-categoryslidup a {
     color: #fff;
+    padding-top: 4rem;
 }
 
 .business .col-md-3 .two {
@@ -1172,7 +1178,7 @@ section {
 
 .hiring .column {
     background: linear-gradient(122deg, #01ACEA, #73469B);
-    width: 530px;
+    width: 502px;
     color: #fff;
     border-radius: .5rem;
     padding: 1rem;
@@ -1188,10 +1194,6 @@ section {
 
 .hiring h2 {
     font-size: 1.5rem;
-}
-
-.hiring .column .row .col-md-6 .img {
-    width: 200px;
 }
 
 .hiring .column .row .col-md-6 .img img {
@@ -1428,7 +1430,7 @@ section {
 }
 
 #footer .footer-img {
-    width: auto;
+    width: 60%;
     margin: 1.25rem 0;
     margin-top: 0;
 }
@@ -1440,10 +1442,12 @@ section {
 
 #footer .medias {
     margin: 1.75rem 0;
+    width: 60%;
 }
 
 #footer ul {
     margin-top: 1rem;
+    width: 100%;
 }
 
 #footer ul li {
