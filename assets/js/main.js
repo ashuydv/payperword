@@ -181,9 +181,6 @@
                 portfolioIsotope.arrange({
                     filter: this.getAttribute('data-filter')
                 });
-                portfolioIsotope.on('arrangeComplete', function() {
-                    AOS.refresh()
-                });
             }, true);
         }
 
