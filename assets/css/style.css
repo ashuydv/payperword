@@ -312,7 +312,7 @@ ul {
 .drop:hover .dd {
     opacity: 1;
     visibility: visible;
-    top: 19.5%;
+    top: 20.25%;
 }
 
 .blue-bar {
@@ -1249,12 +1249,17 @@ section {
     background: #F2F7F2;
 }
 
+.login h2 {
+    font-weight: bold;
+    color: #000;
+}
+
 .login .google {
     background: #4484F2;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 425px;
+    width: 400px;
     margin: 1rem auto;
     padding: .45rem;
     border-radius: 2rem;
@@ -1271,7 +1276,7 @@ section {
 .login .or {
     display: flex;
     align-items: center;
-    width: 425px;
+    width: 400px;
     margin: 1rem auto;
     justify-content: space-between;
 }
@@ -1283,7 +1288,7 @@ section {
 }
 
 .login input {
-    width: 425px;
+    width: 400px;
     margin: 1rem;
     padding: .5rem 1rem;
     border-radius: 4px;
@@ -1291,11 +1296,11 @@ section {
 }
 
 .login .btn-get-started {
-    width: 425px;
+    width: 400px;
     padding: .5rem 1rem;
     background: #73469B;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid transparent;
 }
 
@@ -1357,6 +1362,10 @@ section {
 
 .hiring .btn-get-started {
     margin: 0;
+}
+
+.hiring .btn-get-started:hover {
+    background: #73469B;
 }
 
 .works .description {
@@ -1511,14 +1520,22 @@ section {
 #footer ul li p {
     margin: .5rem 0;
     margin-top: 0;
+    font-size: 14px;
 }
 
 #footer .col-md-4 {
     border-right: 1px solid white;
+    padding-right: 2rem;
+}
+
+#footer .col-md-8 {
+    padding-left: 1.25rem;
 }
 
 #footer .col-md-8 .col-md-4 {
     border: none;
+    margin-right: 0;
+    padding-right: 1rem;
 }
 
 .footer .col-md-4 p {
@@ -1550,7 +1567,7 @@ section {
 }
 
 #footer .footer-top h4 {
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #fff;
     position: relative;
@@ -1578,6 +1595,19 @@ section {
     padding: 10px 0;
     display: flex;
     align-items: center;
+}
+
+#footer .col-md-8 {
+    padding-left: 2.25rem;
+}
+
+#footer .col-md-8 .col-md-4 ul li {
+    cursor: pointer;
+}
+
+#footer .col-md-8 .col-md-4 ul li img {
+    width: 12px;
+    margin-right: .5rem;
 }
 
 #footer .footer-top .footer-links ul li:first-child {
