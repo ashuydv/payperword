@@ -292,8 +292,7 @@ ul {
 
 .dd {
     position: absolute;
-    max-width: 1295px;
-    width: 100%;
+    width: 1120px;
     margin: auto;
     padding: 1rem;
     z-index: 1000;
@@ -301,7 +300,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    left: 7.5%;
+    left: 50%;
+    transform: translateX(-50%);
     top: 19.5%;
     opacity: 0;
     visibility: hidden;
@@ -859,11 +859,6 @@ section {
     }
 }
 
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-
 .breadcrumbs {
     padding: 20px 0;
     background-color: #f1f6fe;
@@ -992,8 +987,7 @@ section {
 
 .business .col-md-3 {
     text-align: center;
-    max-width: 300px;
-    width: 100%;
+    width: 275px;
     height: 350px;
     padding: 0rem;
     border-radius: 4px;
@@ -1019,7 +1013,7 @@ section {
     width: 100%;
     height: 350px;
     padding: 2rem 1rem;
-    margin: 1rem auto;
+    margin: .25rem auto;
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -1256,19 +1250,22 @@ section {
 }
 
 .login .google {
-    background: #01ACEA;
+    background: #4484F2;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 425px;
     margin: 1rem auto;
-    padding: .2rem;
-    border-radius: .25rem;
+    padding: .45rem;
+    border-radius: 2rem;
 }
 
 .login .google img {
-    width: 45px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-right: 0rem;
 }
 
 .login .or {
@@ -1295,11 +1292,10 @@ section {
 
 .login .btn-get-started {
     width: 425px;
-    margin: 1rem;
     padding: .5rem 1rem;
-    background: #14A800;
+    background: #73469B;
     color: #fff;
-    border-radius: 2rem;
+    border-radius: 5px;
     border: 1px solid transparent;
 }
 
@@ -1311,6 +1307,8 @@ section {
     margin-bottom: 0;
     width: 100%;
     color: #fff;
+    text-align: left;
+    margin-left: .5rem;
 }
 
 .works .title,
@@ -1513,6 +1511,14 @@ section {
 #footer ul li p {
     margin: .5rem 0;
     margin-top: 0;
+}
+
+#footer .col-md-4 {
+    border-right: 1px solid white;
+}
+
+#footer .col-md-8 .col-md-4 {
+    border: none;
 }
 
 .footer .col-md-4 p {
